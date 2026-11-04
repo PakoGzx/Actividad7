@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 tvModo.setTextColor(Color.WHITE)
                 tvEstado.setTextColor(Color.WHITE)
                 tvValores.setTextColor(Color.WHITE)
-            } else {
+            } else if (luz > 500) {
                 layout.setBackgroundColor(Color.WHITE)
                 tvModo.text = "Modo: Claro"
                 tvModo.setTextColor(Color.BLACK)
